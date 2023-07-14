@@ -1,10 +1,18 @@
-import { Button } from "flowbite-react";
+import LoginPage from "./page/LoginPage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LoginPage />,
+  },
+]);
 
 function App() {
   return (
-    <div>
-      <Button>Test</Button>
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
