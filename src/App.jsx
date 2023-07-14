@@ -1,7 +1,11 @@
-import "./App.css";
+import { Button } from "flowbite-react";
 
 function App() {
-  return <p>Hello World</p>;
+  return (
+    <div>
+      <Button>Test</Button>
+    </div>
+  );
 }
 
 export default App;
